@@ -7,10 +7,6 @@ output:
   pdf_document: default
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
-
 **Data: REPLICA Rooftop Energy Potential of Low Income Communities in America **
 Link: https://openei.org/datasets/dataset/rooftop-energy-potential-of-low-income-communities-in-america-repli13.
 Info: Data looks clean, 200 + variables, csv file.
