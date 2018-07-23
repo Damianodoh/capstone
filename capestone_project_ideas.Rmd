@@ -11,8 +11,6 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-This repository is for the purpose of storing code and other files related to the capstone project for the intro to data science course through springboard. The links to three data sets are below. Only one will be used once a concrete question is formed.
-
 **Data: REPLICA Rooftop Energy Potential of Low Income Communities in America **
 Link: https://openei.org/datasets/dataset/rooftop-energy-potential-of-low-income-communities-in-america-repli13.
 Info: Data looks clean, 200 + variables, csv file.
