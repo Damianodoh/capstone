@@ -1,5 +1,5 @@
 
-### REPLICA DATA SET #################################
+### REPLICA DATA SET ##################################
 
 #libraries
 library(tidyverse)
@@ -62,7 +62,5 @@ write.csv(df_10, "df_10.csv")
 df_11 <- select(replica, lihtc_qualified)
 write.csv(df_11, "df_11.csv")
 
-data_number <- 0:11
-data
 
- <- paste("df_", data_number)
+
