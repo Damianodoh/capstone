@@ -1,0 +1,67 @@
+---
+title: "Three Capstone Project Ideas"
+author: "Donnie Meyer"
+date: "July 31, 2018"
+output:
+  html_document: default
+  word_document: default
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### **Intro**
+
+This document contains three questions I would like to consider answering for my capstone project in the Introduction to Data Science Course through Springboard. Each section contains questions, a link to the data, the cleint that would interested, and link to a source that motivated me.
+
+This is a rough draft of where my head is. I obviously would like to refine and narrow my foucs.
+
+Any feedback you could give me would be greatly apprciated.
+
+
+### **Rooftop Energy Potential of Low Income Communities in America**
+
+*LINK:* https://openei.org/datasets/dataset/rooftop-energy-potential-of-low-income-communities-in-america-repli13
+
+*Questions:* 
+
+* What geographical areas (tracts, counties, states) have high rates of rooftop solar potential? 
+* What are the characteristics of an area with high degrees of rooftop solar potential? 
+* Which areas can benefit most from solar energy with respect to electicity expenditure savings? 
+* What income groups can beenfit most from solar energy? 
+* What areas with high rooftop solar potential are correlated with strong incentive based solar adoption programs?
+
+*Client:* Government and public policy professionals, private solar energy firms, and utility companies.
+
+*Motivation:* https://www.nrel.gov/solar/seeds/webinars.html
+
+### **Understanding the Evolution of Customer Motivations and Adoption Barriers in Residential Solar Markets: Survey Data**
+
+*LINK:* https://openei.org/datasets/dataset/understanding-the-evolution-of-customer-motivations-and-adoption-barriers-in-residential-solar-mar13
+
+*Question:* 
+
+* What factors incentivze potential solar energy consumers to adopt solar energy instalation?
+* Do subsidies and goverment programs play a role?
+* What economic, cultural, and education factors play a role?
+
+*Client:* Government and private solar energy firms.
+
+*Motivation:* https://www.nrel.gov/solar/seeds/webinars.html
+
+### **Distributed Solar Photovoltaic Array Location and Extent Data Set for Remote Sensing Object Identification**
+
+*LINK:* https://figshare.com/articles/Distributed_Solar_Photovoltaic_Array_Location_and_Extent_Data_Set_for_Remote_Sensing_Object_Identification/3385780
+
+*Question:* 
+
+* Predict where to install or upgrade electric grid infrastructure to meet changing demands on the system. 
+
+*Client:* Utility companies
+
+*Motivation:* https://energy.duke.edu/news/making-solar-count-new-dataset-developed-duke-will-benefit-solar-energy-growth
+
+
+
