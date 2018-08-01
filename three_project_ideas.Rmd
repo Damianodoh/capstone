@@ -14,11 +14,11 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### **Intro**
 
-This document contains three questions I would like to consider answering for my capstone project in the Introduction to Data Science Course through Springboard. Each section contains questions, a link to the data, the cleint that would interested, and link to a source that motivated me.
+This document contains three data sets and questions I would like to consider using for my capstone project. Each section contains questions, a link to the data, the cleint that would interested, and link to a source that motivated me.
 
 This is a rough draft of where my head is. I obviously would like to refine and narrow my foucs.
 
-Any feedback you could give me would be greatly apprciated.
+Any feedback would be greatly apprciated.
 
 
 ### **Rooftop Energy Potential of Low Income Communities in America**
@@ -30,8 +30,8 @@ Any feedback you could give me would be greatly apprciated.
 * What geographical areas (tracts, counties, states) have high rates of rooftop solar potential? 
 * What are the characteristics of an area with high degrees of rooftop solar potential? 
 * Which areas can benefit most from solar energy with respect to electicity expenditure savings? 
-* What income groups can beenfit most from solar energy? 
-* What areas with high rooftop solar potential are correlated with strong incentive based solar adoption programs?
+* What income groups can benefit most from solar energy? 
+* What areas with high rooftop solar potential are correlated with strong incentive based solar programs?
 
 *Client:* Government and public policy professionals, private solar energy firms, and utility companies.
 
