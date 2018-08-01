@@ -16,3 +16,16 @@ df_8 <- read_csv("df_8.csv")
 df_9 <- read_csv("df_9.csv")
 df_10 <- read_csv("df_10.csv")
 df_11 <- read_csv("df_11.csv")
+
+census_tract <- read_tsv("2017_Gaz_tracts_national.txt")
+census_tract <- select(census_tract, c(2,7,8))
+colnames(census_tract) <- tolower(names(census_tract))
+
+#join census tract data long and lat to df_0
+df_0 <- left_join(df_0, census_tract, by = "geoid")
+
+
+
+
+
+
