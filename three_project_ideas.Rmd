@@ -14,7 +14,7 @@ knitr::opts_chunk$set(echo = TRUE)
 
 ### **Intro**
 
-This document contains three data sets and questions I would like to consider using for my capstone project. Each section contains questions, a link to the data, the cleint that would interested, and link to a source that motivated me.
+This document contains three data sets and questions I would like to consider using for my capstone project. Each section contains questions, a link to the data, the cleint that would be interested, and link to a source that motivated me.
 
 This is a rough draft of where my head is. I obviously would like to refine and narrow my foucs.
 
