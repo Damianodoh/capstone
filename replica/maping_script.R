@@ -7,7 +7,7 @@ CA <- read_csv("california.csv")
 
 
 
-### Maping Script ###
+### Maping Script ##
 
 #mapping geoid1
 X1_1 <- as.vector(CA[, c("lon", "lat")])

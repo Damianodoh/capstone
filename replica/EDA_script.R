@@ -50,10 +50,7 @@ df_sample %>%
   geom_point(alpha = 0.1) +
   facet_wrap(.~ rent_own) 
 
-df_sample %>% 
-  ggplot(aes(y = bldg_cnt, x = fam_med_income, color = rent_own)) +
-  geom_point(alpha = 0.1) +
-  facet_wrap(.~ housing_type) 
+
 
 #boxplots
 df_sample ggplot(df_sample, aes(x=income, y=devp_m2, fill=income)) + 

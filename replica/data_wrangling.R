@@ -1,4 +1,4 @@
-#setwd
+#setw
 setwd("/home/donniemeyer32085/git/capstone/replica/")
 #libraries used
 library(tidyverse)
