@@ -1,0 +1,38 @@
+---
+title: "Capstone Proposal"
+author: "Donnie Meyer"
+date: "October 1, 2018"
+output:
+  html_document:
+    df_print: paged
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Project Proposal
+
+#### What is the problem you want to solve?
+I want to understand what factors play prominent roles for households to adopt roof top solar. There are many reasons why consumers adopt, and choose not to rooftop adopt solar. For example, some adopt for financial gain while others adopt for environmnetal reasons. I would like to see on average, which factors played a larger role for adoption. I would also like to see if any demographic groups adopted roof top solar at higher rates. 
+
+#### Who is your client and why do they care about this problem? In other words, what will your client DO or DECIDE based on your analysis that they wouldn’t have otherwise?
+I beleieve solar intallation firms would be interested in this information as it would them pinpoint marketing strategies to increase sales. If there are households who are on the fence about adopting rooftop solar that have common characterictics to households who have already adopted, advertising to them could help them make the switch. I also beleiev government and policy makers would like to understand groups who may adopt solar, but lack the financial resoucres to do so. This could help policy makers craft more effective incentive based policies and created an economic environment where these holds would have the oppurtunity to adopt solar.
+
+#### What data are you going to use for this? How will you acquire this data?
+
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
