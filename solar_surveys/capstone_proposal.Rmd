@@ -5,16 +5,11 @@ date: "October 1, 2018"
 output:
   html_document:
     df_print: paged
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-```
-
-```{r, include=FALSE}
-library(tidyverse)
-setwd("/home/donniemeyer32085/git/capstone/solar_surveys/")
-ACGPS_Viz <- read_csv("ACGPS_Viz.csv")
 ```
 
 
@@ -22,51 +17,27 @@ ACGPS_Viz <- read_csv("ACGPS_Viz.csv")
 
 #### What is the problem you want to solve?
 
-I want to understand what factors play prominent roles for influencing households to adopt roof top solar. There are many reasons why consumers adopt, and choose not to rooftop adopt solar. For example, some adopt for financial gain while others adopt for environmnetal reasons. I would like to see on average, which factors played a larger role for adoption. I would also like to see if any demographic groups adopted roof top solar at higher rates. Understanding the roof top solar adoption characteristic is am exteremly worth while endevour. Rising energy prices, climate change, and lack of jobs such as the coal industry in the US have put tremenduoes pressure on the working class as well as there political representitives. Roof top solar could help solve a large part of the problem by providing clean affordable enegy as well as create new jobs through out the country.
+I want to understand which factors influence households who have **considered** or are currently **considering** roof top solar, to actually make the switch and **adopt** roof top solar. Perhaps and more importantly, what factors lead households who considered adopting roof top solar to reconsider and not take up adoption. There are many reasons why consumers adopt, and choose not to rooftop adopt solar. For example, some adopt for financial gain while others adopt for environmental reasons. On the other hand its likley consideres of roof top solar do not take up adoption because the upfront cost is not finacially viable. Understanding the roof top solar adoption characteristics of consumers seems to be an extremely worth while en-devour. Volatile energy prices, climate change, and lack of jobs in traditional energy sectors such as the coal industry etc. are all problems that could be alleviated with an increase in roof top solar adoption. 
 
 #### Who is your client and why do they care about this problem? In other words, what will your client DO or DECIDE based on your analysis that they wouldn’t have otherwise?
 
-I beleieve solar intallation firms would be interested in this information as it would help them pinpoint marketing strategies to increase sales. If there are households who are on the fence about adopting rooftop solar that have common characterictics to households who have already adopted, advertising to them could help them make the switch. I also beleieve government and policy makers would like to understand groups who may adopt solar, but lack the financial resoucres to do so. This could help policy makers craft more effective incentive based policies and created an economic environment where these holds would have the oppurtunity to adopt solar.
+I believe solar installation firms would be interested in this information as it would help them pinpoint marketing strategies to increase sales. Knowing which groups of consumers to target with advertising etc. could ultimately encourage the adoption of rooftop solar. I also believe governments and policy makers at all levels would find value in understanding the reasons why consumers adopt solar while others do not. It could be that many consumers have considered solar and would like to adopt but lack the financial resources to do so. This would allow policy makers to craft more effective incentive based policies and allow these households more resources to take up adoption. Last but not least, if climate change is as serious a threat as the majority of climate scientists claim it is, then society as a whole would most likely benefit most from an increase in rooftop solar adoption. Roof top solar technologies would allow households to reduce their fossil fuel energy consumption. 
 
 #### What data are you going to use for this? How will you acquire this data?
 
-The data I will be using is a survey data set where all features are catagorical, i.e no continuos variabales. The name of the data set is "Understanding the Evolution of Customer Motivations and Adoption Barriers in Residential Solar Markets: Survey Data" and it has been made public from the National Renewable Energy Laboratory (NREL). 
+The data I will be using is a survey data set where all features are categorical, i.e no continuous variables. The name of the data set is "Understanding the Evolution of Customer Motivations and Adoption Barriers in Residential Solar Markets: Survey Data" and it has been made public from the National Renewable Energy Laboratory (NREL). 
 
-The data comprises of three surveys, an adopter survey, a considerer survey, and a general population survey. The adopter survey is constarined to households who have adopted roof top solar, the considrer survey is constrained to househholds who have seriously considered adopting solar but have yet to do so, and the general population survey is constrained to households who have not adopted roof top solar. The surveys were conducted in four states in the US which were California, Arizona, New York, and New Jeresey.
+The data comprises of three surveys, an adopter survey, a considerer survey, and a general population survey. The adopter survey is limited to households who have adopted roof top solar, the consider survey is limited to households who have seriously considered adopting solar but have yet to do so, and the general population survey is limited to households who have not adopted roof top solar. The surveys were conducted in the four US states California, Arizona, New York, and New Jersey.
 
 #### In brief, outline your approach to solving this problem (knowing that this might change later).
 
-The survey data set has many catagorical varibles that may be useful as explanatory varibles. I currently have a binary dependent variable called "HAVESOLAR" in both tf I append these two data sets the variable is equal to 1 for currenlty have solar, and eqaul to zero if they currenlty do not have solar. Therefor, I can use a logistic regression to model what depednet factor variables play a prominent role influencing considrers to ultimitly make the switch. 
+The analysis of catagorical data must be approached in a different fashion than continuous data. Statistics such the mean and standard deviation can not be computed and models such as linear regression are not useful. Luckily there are a range of statistcial techniques such as mode and median and models suchh as logistic regression that have been developed to analyze catagorical data and survey data. I will use these methods to analyze my data.
 
-I will have the abilty to look at contigency tables to gain better insight into the distributions bewteen solar and non solar adopters as well as visluizations. For an example I included a table and graph below. 
+The data wrangling process will included importing the data into R and analyzing it for missing values, recoding assignments, and features useful for the analysis. The next step will be to plot and visulize the data to gain a more intutitive understanding of the relationships between the dependent variable and the independent variables. There are many interesting ways to visulize catagorical data that I hope to explore. In addition to ploting/visulizing the data contingency will be created to tabulate and explore the data. Statistical tests such as the Pearsons chis quared test and the fishers exact test can be used to test the independence between groups and there respondents.
 
-If time permits I would like to perform a cluster analysis to the data set. 
+The survey data set has many categorical variables that may be useful as explanatory variables for developing a model. I currently have a binary dependent variable called "HAVESOLAR" in the adopter and considerer data sets. If I append these two data sets the variable is equal to 1 for adopted solar, and equal to zero if they currently do not have solar. I will use a logistic regression to determine which factors play a statistically significant role in solar adoption. A full logistic regression analysis will be conducted such model diagnostiocs, confussion matrix, etc. 
 
-```{r}
-### STATE VARIABLE ###
-ACGPS_Viz$STATE <- recode(ACGPS_Viz$STATE, 
-                           `1` = "New_Jersey", 
-                           `2` = "New_York", 
-                           `3` = "Arizona", 
-                           `4` = "California",
-                           `92` = "Other")
-#table of states and solar
-tab_state_solar <- as.tibble(table(ACGPS_Viz$STATE, ACGPS_Viz$HAVESOLAR))
-colnames(tab_state_solar) <- c("STATE", "HAVESOLAR", "COUNT")
-#table with proportions
-tab_state_solar_prop <- tab_state_solar %>% 
-  mutate(Prop_SOLAR = COUNT/sum(COUNT)) %>%
-  arrange(desc(Prop_SOLAR))
-tab_state_solar_prop
-
-```
-
-```{r pressure, echo=FALSE}
-#the bar graph is hard to get information from, use position = fill in geom_col
-ggplot(data = tab_state_solar_prop, mapping = aes(x = STATE, y = Prop_SOLAR, fill = HAVESOLAR)) + 
-  geom_col(color = "black", position = "fill") +
-  coord_flip()
-```
+If time permits I would like to perform a clustering algorithm on the data set. Becasue the data is catagorical kmeans clustering will not work. I have discovered a similar clustering algorithm that uses the mode as opposed to the mean call k-modes clustering. 
 
 #### What are your deliverables? Typically, this would include code, along with a paper and/or a slide deck.
 
