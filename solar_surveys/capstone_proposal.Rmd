@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
 
 #### What is the problem you want to solve?
 
-With any market good, consumers at some point, are in a state of considering whether or not to purchase a good. In this state they could be called “considerers” of the good, if they purchase the good they transition from “considerers” to “adopters”. Using this terminology, I would like to explore which households choose to adopt roof top solar, and what factors play a role in moving them from the considerer state to the adopter state. 
+With any market good, consumers at some point, are in a state of considering whether or not to purchase a good. In this state they could be called “considerers” of the good, if they purchase the good they transition from “considerers” to “adopters”. Using this terminology, I would like to explore which households choose to adopt roof top solar, and what factors play a role in moving them from the considerer state to the adopter state. Secondly and perhaps more importantly, what factors influenced consideres not to adopt roof top solar.
 
 There are many reasons why consumers adopt, and choose not to adopt rooftop solar. For example, some adopt for financial gain while others adopt for environmental reasons. On the other hand, it is plausible that households who considered roof top solar choose not to adopt because the upfront cost is not financially viable. Understanding roof top solar adoption characteristics of consumers seems to be an extremely worth while endeavour. Volatile energy prices, climate change, and lack of jobs in traditional energy sectors are all problems that could be alleviated with an increase in roof top solar adoption. 
 
